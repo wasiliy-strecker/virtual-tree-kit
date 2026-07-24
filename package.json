@@ -1,0 +1,33 @@
+{
+  "name": "virtual-tree-kit-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Accessible virtualized tree primitives for React",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.13.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "pnpm --filter virtual-tree-kit build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "pack:check": "pnpm --filter virtual-tree-kit pack:check",
+    "typecheck": "pnpm --filter virtual-tree-kit typecheck",
+    "verify": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm build && pnpm pack:check"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.5",
+    "@eslint/js": "9.39.2",
+    "@types/node": "22.20.1",
+    "eslint": "9.39.2",
+    "eslint-plugin-react-hooks": "6.1.1",
+    "prettier": "3.9.5",
+    "publint": "0.3.21",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.64.0"
+  }
+}
