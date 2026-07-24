@@ -42,6 +42,16 @@ import {
 See the [core contract](docs/core-contract.md) for invariants, complexity, and
 deliberate limits.
 
+## React primitives
+
+The package root exposes the headless `useVirtualTree` hook and the unstyled
+`VirtualTree` reference component. Both support controlled or uncontrolled
+expansion and selection, predictable active-descendant focus, full tree
+keyboard navigation, typeahead, and bounded DOM rendering.
+
+See the [React contract](docs/react-contract.md) for usage, state ownership,
+accessibility semantics, and deliberate limits.
+
 ## License
 
 [MIT](LICENSE)
