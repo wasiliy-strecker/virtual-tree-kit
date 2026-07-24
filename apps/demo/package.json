@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
+    "build:pages": "vite build --base=/virtual-tree-kit/",
     "dev": "vite",
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json --noEmit"
