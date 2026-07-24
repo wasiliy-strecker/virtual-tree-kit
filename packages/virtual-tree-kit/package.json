@@ -3,6 +3,23 @@
   "version": "0.1.0",
   "description": "Headless, accessible virtualized tree primitives for React",
   "license": "MIT",
+  "author": {
+    "name": "Wasiliy Strecker",
+    "url": "https://github.com/wasiliy-strecker"
+  },
+  "homepage": "https://wasiliy-strecker.github.io/virtual-tree-kit/",
+  "bugs": {
+    "url": "https://github.com/wasiliy-strecker/virtual-tree-kit/issues"
+  },
+  "keywords": [
+    "accessibility",
+    "headless",
+    "react",
+    "treeview",
+    "typescript",
+    "virtualization",
+    "wai-aria"
+  ],
   "type": "module",
   "sideEffects": false,
   "main": "./dist/index.cjs",
