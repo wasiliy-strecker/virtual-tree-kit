@@ -1,1 +1,1 @@
-export type { TreeId } from './core.js'
+export * from './core.js'
