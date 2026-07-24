@@ -22,8 +22,9 @@ pnpm install --frozen-lockfile
 pnpm verify
 ```
 
-The public API, interactive demo, guarantees, and evidence will be documented
-as each reviewable milestone lands.
+Run the interactive showcase with `pnpm demo:dev`, or open the
+[hosted 50,000-node demo](https://wasiliy-strecker.github.io/virtual-tree-kit/).
+Browser evidence runs with `pnpm test:e2e`.
 
 ## Framework-independent core
 
@@ -51,6 +52,14 @@ keyboard navigation, typeahead, and bounded DOM rendering.
 
 See the [React contract](docs/react-contract.md) for usage, state ownership,
 accessibility semantics, and deliberate limits.
+
+## Evidence
+
+The default showcase projects 50,000 visible nodes into at most 24 mounted
+rows. Chromium tests verify the DOM bound, 1,600,000 px scroll extent, keyboard
+focus, typeahead, controlled selection, fixture resizing, and a zero-violation
+Axe scan. See [scale and browser evidence](docs/scale-evidence.md) for the
+testable claims and commands.
 
 ## License
 

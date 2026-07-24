@@ -1,0 +1,26 @@
+{
+  "name": "@virtual-tree-kit/demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive scale and accessibility showcase for virtual-tree-kit",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build:pages": "vite build --base=/virtual-tree-kit/",
+    "dev": "vite",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "virtual-tree-kit": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.4",
+    "typescript": "5.9.3",
+    "vite": "8.1.5"
+  }
+}
