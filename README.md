@@ -25,6 +25,23 @@ pnpm verify
 The public API, interactive demo, guarantees, and evidence will be documented
 as each reviewable milestone lands.
 
+## Framework-independent core
+
+The current `/core` entry point provides an immutable tree collection,
+WAI-ARIA-aligned navigation decisions, accent-insensitive typeahead, fixed-row
+virtual range calculation, and scroll alignment. It is independently usable
+without React:
+
+```ts
+import {
+  calculateVirtualRange,
+  createTreeCollection,
+} from 'virtual-tree-kit/core'
+```
+
+See the [core contract](docs/core-contract.md) for invariants, complexity, and
+deliberate limits.
+
 ## License
 
 [MIT](LICENSE)
